@@ -18,8 +18,8 @@ seconds =0
 }
 handleClick=()=>show===true? this.State.Person.show():0
 
-  // componentDidMount = () => {
-  // const [seconds, setSeconds] = useState(0);
+  componentDidMount = () => {
+  const [seconds, setSeconds] = useState(0);
 
 useEffect(() => {
     const interval = setInterval(() => {
@@ -35,7 +35,7 @@ useEffect(() => {
       <header className="App-header">
       <button onClick={this.handleClick}>"Click me"</button>
       <div>
-        {seconds} seconds have elapsed since mounting.
+        {interval} seconds have elapsed since mounting.
       </div>
         //  <h1> {this.state.fullName,this.state.image,this.state.profession} </h1>
         <img src={logo} className="App-logo" alt="logo" />
